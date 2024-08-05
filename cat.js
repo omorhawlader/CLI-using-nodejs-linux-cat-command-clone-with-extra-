@@ -11,7 +11,17 @@ function readFromFile(path) {
     exit(1);
   });
 
-  fileStream.pipe(stdout);
+  fileStream.on("data", (data) => {
+    const coloredText = changeColor(34, data.toString());
+    if (!stdout.write(coloredText)) {
+      fileStream.pause();
+    }
+  });
+
+  stdout.on("drain", () => {
+    fileStream.resume();
+  });
+
   fileStream.on("end", () => {
     stdout.write("\n");
     exit(0);
@@ -35,8 +45,8 @@ stdin.on("data", (data) => {
     const path = input.slice(5);
     readFromFile(path);
   } else {
-    const upperCaseText = data.toString().toUpperCase().slice(0, 10);
-    const coloredText = changeColor(34, upperCaseText); // Change color to red (31)
+    const upperCaseText = data.toString().toUpperCase();
+    const coloredText = changeColor(34, upperCaseText); // Change color to blue (34) for red 31
     stdout.write(coloredText);
     stdout.write("\n");
   }
