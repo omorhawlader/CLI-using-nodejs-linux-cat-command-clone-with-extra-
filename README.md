@@ -20,7 +20,7 @@ you can install using npm also.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/omorhawlader/node-cat-command.git
+   git clone https://github.com/omorhawlader/CLI-using-nodejs-linux-cat-command-clone-with-extra-
 
    ```
 

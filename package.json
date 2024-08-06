@@ -1,6 +1,6 @@
 {
   "name": "nodcat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This Node.js script mimics the `cat` command in Linux, allowing you to read from a file or standard input and print the output with colored text. You can read larger file content without any problem even 10gb or larger 🙂",
   "main": "cat.js",
   "bin": {
