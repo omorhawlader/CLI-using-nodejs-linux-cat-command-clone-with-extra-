@@ -13,7 +13,7 @@ This Node.js script mimics the `cat` command in Linux, allowing you to read from
 
 you can install using npm also.
 
-`npm nodcat`
+`npm i nodcat`
 
 ## Installation
 
