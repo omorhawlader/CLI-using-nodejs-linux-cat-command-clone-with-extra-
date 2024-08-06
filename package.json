@@ -1,0 +1,25 @@
+{
+  "name": "nodcat",
+  "version": "1.0.1",
+  "description": "This Node.js script mimics the `cat` command in Linux, allowing you to read from a file or standard input and print the output with colored text. You can read larger file content without any problem even 10gb or larger 🙂",
+  "main": "cat.js",
+  "bin": {
+    "nodcat": "./cat.js"
+  },
+  "scripts": {
+    "start": "node ./cat.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omorhawlader/CLI-using-nodejs-linux-cat-command-clone-with-extra-.git"
+  },
+  "keywords": [
+    "nodecli"
+  ],
+  "author": "Omor Hawlader",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omorhawlader/CLI-using-nodejs-linux-cat-command-clone-with-extra-/issues"
+  },
+  "homepage": "https://github.com/omorhawlader/CLI-using-nodejs-linux-cat-command-clone-with-extra-#readme"
+}

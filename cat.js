@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { stdin, stdout, stderr, argv, exit } = require("process");
 const fs = require("fs");
 
@@ -46,7 +47,7 @@ stdin.on("data", (data) => {
     readFromFile(path);
   } else {
     const upperCaseText = data.toString().toUpperCase();
-    const coloredText = changeColor(34, upperCaseText); // Change color to blue (34) for red 31
+    const coloredText = changeColor(34, upperCaseText); // Change color to blue (34) for red 31....
     stdout.write(coloredText);
     stdout.write("\n");
   }

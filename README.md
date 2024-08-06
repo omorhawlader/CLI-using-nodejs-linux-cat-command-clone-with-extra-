@@ -11,18 +11,24 @@ This Node.js script mimics the `cat` command in Linux, allowing you to read from
 - Converts stdin input to uppercase and colors it before printing.
 - Allows changing the file path dynamically by entering `path:<filePath>`.
 
+you can install using npm also.
+
+`npm nodcat`
+
 ## Installation
 
 1. Clone the repository:
 
    ```sh
    git clone https://github.com/omorhawlader/node-cat-command.git
-   cd node-cat-command
+
    ```
+
+   cd node-cat-command
 
 ## Install dependencies
 
-2. No Need Bcoz everthing in raw!
+`npm install`
 
 ## Usage
 
@@ -94,3 +100,9 @@ Input:
 ```sh
 path:example.txt
 ```
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/omor-hawlader-dev/)
+- [Facebook](https://www.facebook.com/mohammad.omar.on)
+- [Github](https://github.com/omorhawlader/)
